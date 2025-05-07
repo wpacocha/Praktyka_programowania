@@ -1,9 +1,10 @@
-#zagniedzone warunki score
-#duzo duplikacji
-#dodano 3 metody
-#dodano score_names
+# zagniedzone warunki score
+# duzo duplikacji
+# dodano 3 metody
+# dodano score_names
 class TennisGame1:
     SCORE_NAMES = ["Love", "Fifteen", "Thirty", "Forty"]
+
     def __init__(self, player1_name, player2_name):
         self.player1_name = player1_name
         self.player2_name = player2_name
@@ -19,7 +20,7 @@ class TennisGame1:
     def score(self):
         if self.player1_score == self.player2_score:
             return self._draw_score()
-        elif self.player1_score >= 4 or self.player2_score >=4 :
+        elif self.player1_score >= 4 or self.player2_score >= 4:
             return self._endgame_score()
         else:
             return self._standard_score()
