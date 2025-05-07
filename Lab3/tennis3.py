@@ -1,6 +1,6 @@
-#cala logika upchana w score()
-#spaghetti if elif
-#trudne do zrozumienia porownania
+# cala logika upchana w score()
+# spaghetti if elif
+# trudne do zrozumienia porownania
 class TennisGame3:
     def __init__(self, player1_name, player2_name):
         self.p1_n = player1_name
@@ -23,10 +23,10 @@ class TennisGame3:
             return self._standard_score()
 
     def _point_name(self, point):
-        return ["Love", "Fifteen","Thirty","Forty"][point]
+        return ["Love", "Fifteen", "Thirty", "Forty"][point]
 
     def _draw_score(self):
-        if self.p1 <3:
+        if self.p1 < 3:
             return f"{self._point_name(self.p1)}-All"
         return "Deuce"
 
